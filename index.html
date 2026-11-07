@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11110f" />
+  <meta name="description" content="اطلاعات مراسم و مسیریابی به محل برگزاری" />
+  <title>مراسم عروسی | اطلاعات و مسیریابی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <span>دعوت‌نامه مراسم</span>
+      <span class="topbar-line"></span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">THE WEDDING CELEBRATION</p>
+      <div class="ornament" aria-hidden="true"><span></span>✧<span></span></div>
+      <h1>به شادیِ ما<br><em>دعوتید</em></h1>
+      <p class="hero-subtitle">حضور شما، زیبایی این شب را کامل می‌کند.</p>
+    </section>
+
+    <section class="venue-card" aria-labelledby="venue-title">
+      <div class="card-topline"><span class="gold-dot"></span> اطلاعات محل برگزاری</div>
+      <div class="venue-heading">
+        <div>
+          <p class="section-kicker">WEDDING VENUE</p>
+          <h2 id="venue-title">تالار نمونه مراسم</h2>
+          <p class="venue-address" id="venue-address">تهران، میدان آزادی، آدرس نمونه برای آزمایش</p>
+        </div>
+        <div class="location-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 10.2c0 5.1-8 11.3-8 11.3S4 15.3 4 10.2a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </div>
+      </div>
+
+      <div class="details-row">
+        <div class="detail-item">
+          <span class="detail-icon">◷</span>
+          <div><small>تاریخ مراسم</small><strong id="event-date">به‌زودی اعلام می‌شود</strong></div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">⌚</span>
+          <div><small>ساعت شروع</small><strong id="event-time">۱۹:۰۰</strong></div>
+        </div>
+      </div>
+
+      <div class="divider"><span>مسیر دسترسی</span></div>
+      <p class="directions-caption">برای مشاهده مسیر، اپلیکیشن موردنظرتان را انتخاب کنید.</p>
+
+      <div class="map-buttons">
+        <a class="map-button neshan" id="neshan-link" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon">ن</span><span class="button-copy"><strong>نشان</strong><small>مسیریابی با نشان</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="map-button balad" id="balad-link" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon">ب</span><span class="button-copy"><strong>بلد</strong><small>مسیریابی با بلد</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="map-button google" id="google-link" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon google-g">G</span><span class="button-copy"><strong>Google Maps</strong><small>Open in Google Maps</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="map-button waze" id="waze-link" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon waze-icon">W</span><span class="button-copy"><strong>Waze</strong><small>Navigate with Waze</small></span><span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <a class="copy-address" href="#" id="copy-address">
+        <span>▣</span> کپی کردن آدرس
+      </a>
+      <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-ornament">✧</span>
+      <p>به امید دیدار شما در شبی به‌یادماندنی</p>
+      <small>WITH LOVE</small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
