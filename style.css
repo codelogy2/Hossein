@@ -63,9 +63,94 @@ h2 { margin: 0 0 7px; font-size: 21px; font-weight: 600; }
 .copy-address { margin: 17px auto 0; width: fit-content; display: flex; gap: 8px; align-items: center; color: var(--gold-light); font-size: 10px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 30px; transition: background .2s; }
 .copy-address:hover { background: rgba(201,170,114,.08); }
 .copy-feedback { min-height: 14px; text-align: center; color: #b9d6b2; font-size: 9px; margin: 4px 0 -8px; }
+
+/* Countdown timer */
+.countdown-card {
+  position: relative;
+  margin-top: 20px;
+  padding: 27px 16px 23px;
+  text-align: center;
+  border: 1px solid rgba(201,170,114,.27);
+  border-radius: 19px;
+  background: linear-gradient(145deg, rgba(34,34,29,.92), rgba(22,23,21,.96));
+  box-shadow: 0 18px 50px rgba(0,0,0,.2), inset 0 1px rgba(255,255,255,.025);
+  overflow: hidden;
+}
+.countdown-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 22%;
+  right: 22%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.countdown-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+}
+.countdown-heading span { font-size: 14px; }
+.countdown-heading p {
+  margin: 0;
+  font-size: 8px;
+  letter-spacing: 2px;
+  direction: ltr;
+}
+.countdown-card h3 {
+  margin: 15px 0 22px;
+  color: var(--gold-light);
+  font-size: 15px;
+  font-weight: 500;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(3px, 1.4vw, 10px);
+}
+.countdown-unit {
+  min-width: clamp(48px, 13vw, 66px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.countdown-unit strong {
+  color: var(--gold-light);
+  font-size: clamp(25px, 7vw, 35px);
+  line-height: 1.15;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.countdown-unit small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.countdown-colon {
+  color: rgba(201,170,114,.65);
+  font-size: 23px;
+  margin-top: -14px;
+}
+.countdown-message {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
 .footer { text-align: center; padding: 27px 10px 0; color: var(--muted); }
 .footer-ornament { color: var(--gold); font-size: 17px; }
 .footer p { font-size: 11px; margin: 6px 0 8px; }
 .footer small { color: var(--gold); font-size: 8px; letter-spacing: 3px; direction: ltr; display: inline-block; }
-@media (max-width: 390px) { .page-shell { width: min(100% - 22px, 620px); } .map-buttons { gap: 8px; } .map-button { padding: 9px 8px; gap: 7px; } .app-icon { width: 31px; height: 31px; flex-basis: 31px; } .button-copy strong { font-size: 10px; } }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+@media (max-width: 390px) {
+  .page-shell { width: min(100% - 22px, 620px); }
+  .map-buttons { gap: 8px; }
+  .map-button { padding: 9px 8px; gap: 7px; }
+  .app-icon { width: 31px; height: 31px; flex-basis: 31px; }
+  .button-copy strong { font-size: 10px; }
+  .countdown-card { padding-inline: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
